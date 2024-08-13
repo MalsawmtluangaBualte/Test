@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -35,8 +36,9 @@ body {
 
 .card {
     width: 300px; /* Increased width */
-    height: 400px; /* Increased height */
-    background: url('pic.jpg') no-repeat center center; /* Add your image path here */
+    height: 400px;
+    color: aqua; /* Increased height */
+    background: #f790a3 no-repeat center center; /* Add your image path here */
     background-size: cover;
     border-color: coral; /* Make sure the background image covers the entire card */
     border-radius: 10px;
@@ -47,6 +49,16 @@ body {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+}
+.header-text {
+    font-size: 2rem;
+    color: hsl(212, 31%, 35%);
+    border: black; /* Pink color */
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    font-stretch: condensed;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .card.flip {
